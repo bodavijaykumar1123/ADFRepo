@@ -1,0 +1,19 @@
+{
+	"name": "ds_sqltable",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=testsqlserver002.database.windows.net;Initial Catalog=testsqldb001;User ID=Suresh",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Keyvalut",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLPWD"
+			}
+		}
+	}
+}
