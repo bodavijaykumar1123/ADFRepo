@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "TestDatafactory04"
+		},
+		"ds_sqltable_connectionString": {
+			"value": ""
+		},
+		"LS_ADLSGen2Connection_properties_typeProperties_url": {
+			"value": "https://azuredatalakegen2demo002.dfs.core.windows.net"
+		},
+		"LS_BLOBConnection_properties_typeProperties_connectionString_secretName": {
+			"value": "BlobConnectionString"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_Keyvalut_properties_typeProperties_baseUrl": {
+			"value": "https://adfkeyvaulttest01.vault.azure.net/"
+		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG001/providers/Microsoft.Storage/storageAccounts/teststorageaccountsa001"
+		}
+	}
+}
